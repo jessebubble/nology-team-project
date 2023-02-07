@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import HomePage from "./container/HomePage";
 import {useState, useEffect } from "react";
 
@@ -38,10 +39,21 @@ const App = () => {
         setPlaces(res);
       })
   }
+=======
+import Footer from "./components/footer/Footer";
+import NavBar from "./components/navbar/NavBar";
+import Hero from "./container/Hero";
+>>>>>>> 6d987c3125ee89484cc9c3ee413255e17e7f09fd
 
   return (
     <>
+<<<<<<< HEAD
     <HomePage/>
+=======
+    <NavBar />
+    <Hero />
+    <Footer />
+>>>>>>> 6d987c3125ee89484cc9c3ee413255e17e7f09fd
     </>
   );
 }
