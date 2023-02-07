@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #202020;
+    box-shadow: 0 0 5px 0 #ffffff1a;
+}
+.navbar-logo > h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar-links > ul > li {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.navbar-links > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}

@@ -1,9 +1,10 @@
+import HomePage from "./container/HomePage";
 
 function App() {
   return (
-    <div>
-      <h1>Texas Triangle</h1>
-    </div>
+    <>
+    <HomePage />
+    </>
   );
 }
 
