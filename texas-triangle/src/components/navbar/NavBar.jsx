@@ -8,6 +8,14 @@ const NavBar = () => {
                 <h1>Texas Triangle</h1>
             </div>
             <div className="navbar-links">
+                <select name="city">
+                    <option value="a">Austin</option>
+                    <option value="d">Dallas</option>
+                    <option value="h">Houston</option>
+                    <option value="s">San Antonio</option>
+                </select>
+            </div>
+            <div className="navbar-links">
                 <ul>
                     <li>
                         Dev1
