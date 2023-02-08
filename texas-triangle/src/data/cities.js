@@ -1,4 +1,4 @@
-[
+const citiesInfo = [
   {
     "id": "1",
     "city": "Houston",
@@ -9,7 +9,7 @@
     "restaurants": "Houston offers a wide variety of food specializing in Mexican, Cajun, and Tex-Mex cuisines. The city is also home to a large number of restaurants specializing in Asian, Italian, and French cuisines. ",
     "attractions": "Houston is home of Seaworld and the international space center. The city is also home to the Houston Museum of Natural Science, the Houston Museum of Fine Arts, the Houston Zoo, and the Houston Arboretum and Nature Center.",
     "zoo": "The Houston Zoo is home to more than 6,000 animals representing more than 900 species. The zoo is a leader in animal conservation and research, and is a member of the Association of Zoos and Aquariums. The zoo is also home to the Houston Zoo Institute for Conservation Research, which is dedicated to the conservation of endangered species.",
-    "image": "https://www.pexels.com/photo/houston-before-sunrise-15353653/",
+    "image": "https://images.pexels.com/photos/15353653/pexels-photo-15353653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "University": "University of Houston",
     "Companies": "Some notable companies are ExxonMobil, Chevron, Halliburton, Schlumberger, Baker Hughes, and ConocoPhillips.",
     "description": "Houston is the acknowledged energy capital of the world with its complex of energy headquarters, financing institutions, research centers, and petroleum processing and transportation facilities. Its medical center houses more clinical institutions and life sciences research facilities than any other medical complex in the world."
@@ -59,4 +59,6 @@
     "Companies": "Some notable companies are Dell, Apple, IBM, and Oracle.",
     "description": "Austin and San Antonio are connected by 75 miles of continuous urbanization, including the vital region around San Marcos and a string of the fastest growing small cities in the nation. Austin is home to world-class companies, particularly in technology, the University of Texas, and also is home to the government of the nation’s second largest state. Austin is also home to the Texas State Capitol, the Texas Governor's Mansion, and the Texas Supreme Court."
   }
-]
+];
+
+export default citiesInfo;

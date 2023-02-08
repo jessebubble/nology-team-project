@@ -1,32 +1,41 @@
 import "./navbar.css"
+import Filter from "../filter/Filter.jsx"
 
-const NavBar = () => {
+const NavBar = (props) => {
+    const {setAustin, setDallas, setHouston, setSanAntonio, austin, dallas, 
+            houston, sanAntonio} = props;
 
     return (
         <nav className="navbar">
             <div className="navbar-logo">
                 <h1>Texas Triangle</h1>
             </div>
-            <div className="navbar-links">
-                <select name="city">
-                    <option value="a">Austin</option>
-                    <option value="d">Dallas</option>
-                    <option value="h">Houston</option>
-                    <option value="s">San Antonio</option>
-                </select>
-            </div>
-            <div className="navbar-links">
-                <ul>
-                    <li>
-                        Dev1
-                    </li>
-                    <li>
-                        Dev2
-                    </li>
-                    <li>
-                        Dev3
-                    </li>
-                </ul>
+            <div className="navbar-filters">
+                <Filter
+                id="1"
+                title="Austin"
+                setCheck={setAustin}
+                check={austin}
+                />
+                <Filter
+                id="2"
+                title="Dallas-Fort Worth"
+                setCheck={setDallas}
+                check={dallas}
+                />
+                <Filter
+                id="3"
+                title="Houston"
+                setCheck={setHouston}
+                check={houston}
+                />
+                <Filter
+                id="4"
+                title="San Antonio"
+                setCheck={setSanAntonio}
+                check={sanAntonio}             
+                />
+                    
             </div>
         </nav>
     );
