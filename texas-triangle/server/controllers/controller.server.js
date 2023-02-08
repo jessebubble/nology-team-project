@@ -15,3 +15,12 @@ export const getCitiesById = (req, res) => {
         })
         .catch((error) => console.log(error));
 }
+
+export const addCity = (req, res) => {
+    const newCity = new CitiesModel(req.body);
+    newCity.save()
+        .then((city) => {
+            res.status(201).send(city);
+        })
+        .catch((error) => console.log(error));
+}
