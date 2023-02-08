@@ -12,13 +12,13 @@
     font-weight: bold;
     cursor: pointer;
 }
-.navbar-links > ul > li {
+/* .navbar-filters > Filter.title {
     text-decoration: none;
     list-style: none;
     color: #ffffff;
     cursor: pointer;
-}
-.navbar-links > ul {
+} */
+.navbar-filters {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

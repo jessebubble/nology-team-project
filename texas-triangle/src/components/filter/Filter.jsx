@@ -1,3 +1,5 @@
+import "./filter.css";
+
 const Filter = (props) => {
 
     const {id, title, setCheck, check} = props;

@@ -1,10 +1,13 @@
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+
+    const { handleInput } = props;
 
     return (
         <div className="search-bar">
             <input 
-                type="text" 
+                type="text"
+                onChange={handleInput} 
                 placeholder="Search for a city" 
             />
         </div>

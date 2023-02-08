@@ -2,9 +2,7 @@ import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import Hero from "./container/Hero";
 import { useState } from "react";
-
-
-// import {useState, useEffect } from "react";
+import SearchBar from "./components/searchbar/SearchBar";
 
 const App = () => {
   // const [places, setPlaces] = useState([]);
@@ -13,7 +11,7 @@ const App = () => {
   const [dallas, setDallas] = useState(false);
   const [houston, setHouston] = useState(false);
   const [attractionType, setAttractionType] = useState("all");
-  // const [searchAttractions, setAttractions] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   // const [city, setCity] = useState("");
   // const [resto, setResto] = useState(false);
   // const [museum, setMuseum] = useState(false);
@@ -43,7 +41,10 @@ const App = () => {
   //       setPlaces(res);
   //     })
   // }
-
+  const handleInput = (event) => {
+    const cleanInput = event.target.value.toLowerCase();
+    setSearchTerm(cleanInput);
+  }
 
   return (
     <>
@@ -58,9 +59,10 @@ const App = () => {
             <div className="hero-left">
                 <h1>Hero Left</h1>
                 <p>What is texas triangle</p>
-                <p>Searchbar</p>
+                <SearchBar handleInput={handleInput} />
                 <p>Button</p>
                 <div className="filter-dropdown">
+                  <p>Looking for information about attractions?</p>
                     <select name="attractions" onChange={(e)=>{setAttractionType(e.target.value)}}>
                         <option value="all">All</option>
                         <option value="parks">Parks</option>
@@ -78,6 +80,8 @@ const App = () => {
       houston={houston}
       sanAntonio={sanAntonio}
       attractionType={attractionType}
+      setSearchTerm={setSearchTerm}
+      searchTerm={searchTerm}
      />
      </div>
  </div>

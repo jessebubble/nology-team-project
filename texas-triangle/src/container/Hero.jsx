@@ -8,6 +8,7 @@ const Hero = (props) => {
     const {austin, dallas, houston, sanAntonio, attractionType} = props;
     const [displayCities, setDisplayCities] = useState("");
 
+    useEffect(() => {
     const updateCities = () => {
         const filteredCities = cities.filter((city)=>{
             return ( austin && city.city === "Austin" ) ||
@@ -17,24 +18,32 @@ const Hero = (props) => {
                    ( !austin && !dallas && !houston && !sanAntonio );
         });
         const mappedCities = filteredCities.map((city) => {
-            if( attractionType == "all" ) {
+            if( attractionType === "all" ) {
                 city.displayPopulation = city.population
+                city.displayDescription = city.description
+                city.displayAttractions = city.attractions
+                city.displayUniversity = city.University
+                city.displayCompanies = city.Companies
             }    else {
-                city.displayPopulation = "";
+                city.displayPopulation = ""
+                city.displayDescription = ""
+                city.displayAttractions = ""
+                city.displayUniversity = ""
+                city.displayCompanies = "";
             }
-            if( attractionType == "all" || attractionType == "parks" )
+            if( attractionType === "all" || attractionType === "parks" )
                 city.displayParks = city.parks;
             else
                 city.displayParks="";
-            if( attractionType == "all" || attractionType == "museums" )
+            if( attractionType === "all" || attractionType === "museums" )
             city.displayMuseums = city.museums;
             else
                 city.displayMuseums="";
-            if( attractionType == "all" || attractionType == "restaurant" )
+            if( attractionType === "all" || attractionType === "restaurant" )
             city.displayRestaurants = city.restaurants;
             else
                 city.displayRestaurants="";
-            if( attractionType == "all" || attractionType == "zoo" )
+            if( attractionType === "all" || attractionType === "zoo" )
             city.displayZoo = city.zoo;
             else
                 city.displayZoo="";
@@ -42,8 +51,8 @@ const Hero = (props) => {
         });
         setDisplayCities(mappedCities);
     }
-
-    useEffect(() => {updateCities()},[austin,dallas,houston,sanAntonio,attractionType])
+    updateCities()
+    },[austin,dallas,houston,sanAntonio,attractionType])
 
     return (
         <>
