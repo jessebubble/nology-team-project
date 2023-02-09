@@ -44,6 +44,7 @@ const App = () => {
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
     setSearchTerm(cleanInput);
+    console.log(searchTerm)
   }
 
   return (
@@ -60,14 +61,14 @@ const App = () => {
                 <h1>Hero Left</h1>
                 <p>What is texas triangle</p>
                 <SearchBar handleInput={handleInput} />
-                <p>Button</p>
+                
                 <div className="filter-dropdown">
                   <p>Looking for information about attractions?</p>
                     <select name="attractions" onChange={(e)=>{setAttractionType(e.target.value)}}>
                         <option value="all">All</option>
                         <option value="parks">Parks</option>
                         <option value="museums">Museums</option>
-                        <option value="restaurant">Restaurants</option>
+                        <option value="restaurants">Restaurants</option>
                         <option value="zoo">Zoos</option>
                     </select>
                 </div>
