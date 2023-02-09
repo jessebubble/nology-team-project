@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 
 dotenv.config();
 
-const database = `mongodb://localhost:27017/texas-triangle`;
+mongoose.connect(`mongodb+srv://${process.env.MONGODB_URI}`)
 
-export { database };
+module.exports = mongoose.connection;
