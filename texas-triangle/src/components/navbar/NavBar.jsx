@@ -3,7 +3,7 @@ import Filter from "../filter/Filter.jsx"
 
 const NavBar = (props) => {
     const {setAustin, setDallas, setHouston, setSanAntonio, austin, dallas, 
-            houston, sanAntonio} = props;
+            houston, sanAntonio, setCity} = props;
 
     return (
         <nav className="navbar">
@@ -35,7 +35,16 @@ const NavBar = (props) => {
                 setCheck={setSanAntonio}
                 check={sanAntonio}             
                 />
-                    
+            </div>
+<div className="thirdperson"></div>
+            <div className="city-dropdown">
+                <select onChange={(e)=>{setCity(e.target.value)}}>
+                    <option value="all">All</option>
+                    <option value="Austin">Austin</option>
+                    <option value="Dallas">Dallas-Fort Worth</option>
+                    <option value="Houston">Houston</option>
+                    <option value="SanAntonio">San Antonio</option>
+                </select>
             </div>
         </nav>
     );

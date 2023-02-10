@@ -8,7 +8,7 @@ const SearchBar = (props) => {
             <input 
                 type="text"
                 onChange={handleInput} 
-                placeholder="Search for a city" 
+                placeholder="Search..." 
             />
         </div>
     );

@@ -3,6 +3,7 @@ import NavBar from "./components/navbar/NavBar";
 import Hero from "./container/Hero";
 import { useState } from "react";
 import SearchBar from "./components/searchbar/SearchBar";
+import "./app.css"
 
 const App = () => {
   // const [places, setPlaces] = useState([]);
@@ -12,7 +13,7 @@ const App = () => {
   const [houston, setHouston] = useState(false);
   const [attractionType, setAttractionType] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
-  // const [city, setCity] = useState("");
+  const [city, setCity] = useState("all");
   // const [resto, setResto] = useState(false);
   // const [museum, setMuseum] = useState(false);
   // const [park, setPark] = useState(false);
@@ -54,16 +55,19 @@ const App = () => {
       setDallas={setDallas} dallas={dallas}
       setHouston={setHouston} houston={houston}
       setSanAntonio={setSanAntonio} sanAntonio={sanAntonio}
+      setCity={setCity}
     />
     <div className="hero">
         <div className="hero-container">
             <div className="hero-left">
-                <h1>Hero Left</h1>
-                <p>What is texas triangle</p>
+                
+                <h4>What is texas triangle?</h4>
+                <div className = "tx-triangle">The Texas Triangle (also known as Texaplex) is a region of Texas which contains the state's five largest cities and is home to the majority of the state's population. The Texas Triangle is formed by the state's four main urban centers, Austin, Dallas–Fort Worth, Houston, and San Antonio, connected by Interstate 45, Interstate 10, and Interstate 35. In 2020, the population of the Texas Triangle reached nearly 21 million following rapid growth across much of Texas. The Texas Triangle is one of eleven megaregions in the United States, clusters of urban areas which share economic and cultural ties.</div>
+                <br></br>
                 <SearchBar handleInput={handleInput} />
                 
                 <div className="filter-dropdown">
-                  <p>Looking for information about attractions?</p>
+                  <h4>Looking for specific attractions?</h4>
                     <select name="attractions" onChange={(e)=>{setAttractionType(e.target.value)}}>
                         <option value="all">All</option>
                         <option value="parks">Parks</option>
@@ -74,19 +78,19 @@ const App = () => {
                 </div>
             </div>
             <div className="hero-right">
-            <h1>Hero Right</h1>
-    <Hero 
-      austin={austin}
-      dallas={dallas}
-      houston={houston}
-      sanAntonio={sanAntonio}
-      attractionType={attractionType}
-      setSearchTerm={setSearchTerm}
-      searchTerm={searchTerm}
-     />
-     </div>
- </div>
-</div>
+                <Hero 
+                  austin={austin}
+                  dallas={dallas}
+                  houston={houston}
+                  sanAntonio={sanAntonio}
+                  attractionType={attractionType}
+                  setSearchTerm={setSearchTerm}
+                  searchTerm={searchTerm}
+                  city={city}
+                />
+            </div>
+          </div>
+      </div>
     <Footer />
     
     </>

@@ -10,7 +10,7 @@ const citiesInfo = [
     "attractions": "Houston is home of Seaworld and the international space center. The city is also home to the Houston Museum of Natural Science, the Houston Museum of Fine Arts, the Houston Zoo, and the Houston Arboretum and Nature Center.",
     "zoo": "The Houston Zoo is home to more than 6,000 animals representing more than 900 species. The zoo is a leader in animal conservation and research, and is a member of the Association of Zoos and Aquariums. The zoo is also home to the Houston Zoo Institute for Conservation Research, which is dedicated to the conservation of endangered species.",
     "image": "https://images.pexels.com/photos/15353653/pexels-photo-15353653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "University": "University of Houston",
+    "University": "University: University of Houston",
     "Companies": "Some notable companies are ExxonMobil, Chevron, Halliburton, Schlumberger, Baker Hughes, and ConocoPhillips.",
     "description": "Houston is the acknowledged energy capital of the world with its complex of energy headquarters, financing institutions, research centers, and petroleum processing and transportation facilities. Its medical center houses more clinical institutions and life sciences research facilities than any other medical complex in the world."
   },
@@ -25,7 +25,7 @@ const citiesInfo = [
     "attractions": "Dallas is home to the Dallas World Aquarium, the Dallas Museum of Art, the Dallas Arboretum and Botanical Garden, the Dallas Zoo, and the Perot Museum of Nature and Science.",
     "zoo": "The Dallas Zoo is home to more than 2,000 animals representing more than 400 species. The zoo is a leader in animal conservation and research, and is a member of the Association of Zoos and Aquariums. The zoo is also home to the Dallas Zoo Institute for Conservation Research, which is dedicated to the conservation of endangered species.",
     "image": "https://images.unsplash.com/photo-1580536793208-117fdb20ffc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-    "University": "University of Texas at Dallas and Texas Christian University",
+    "University": "University: University of Texas at Dallas and Texas Christian University",
     "Companies": "Some notable companies are AT&T, American Airlines, Southwest Airlines, ExxonMobil, and Texas Instruments.",
     "description": "Dallas-Fort Worth is an established financial center, telecommunications pioneer, and its two airports are the hubs of flights connecting the Southwestern U.S. to the nation and to the world. It has become a favored location for corporate expansions and relocations for both domestic and foreign companies."
   },
@@ -40,7 +40,7 @@ const citiesInfo = [
     "attractions": "San Antonio is home to the San Antonio Zoo, the San Antonio Museum of Art, the San Antonio Botanical Garden, and the San Antonio Children's Museum.",
     "zoo": "The San Antonio Zoo is home to more than 3,500 animals representing more than 600 species. The zoo is a leader in animal conservation and research, and is a member of the Association of Zoos and Aquariums. The zoo is also home to the San Antonio Zoo Institute for Conservation Research, which is dedicated to the conservation of endangered species.",
     "image": "https://images.unsplash.com/photo-1634508943216-5887aac4eb66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1671&q=80",
-    "University": "University of Texas at San Antonio and Trinity University",
+    "University": "University: University of Texas at San Antonio and Trinity University",
     "Companies": "Some notable companies are USAA, Valero Energy, Tesoro, and Rackspace.",
     "description": "San Antonio is home to the nation’s second largest concentration of cybersecurity companies, to three major Armed Forces commands, to an international automotive manufacturing hub centered on Toyota, and to the most visited destinations in the state, the Alamo and the Riverwalk."
   },
@@ -55,7 +55,7 @@ const citiesInfo = [
     "attractions": "Austin is home to the Austin Zoo, the Blanton Museum of Art, the Austin Botanical Garden, and the Austin Children's Museum.",
     "zoo": "The Austin Zoo is home to more than 3,500 animals representing more than 600 species. The zoo is a leader in animal conservation and research, and is a member of the Association of Zoos and Aquariums. The zoo is also home to the Austin Zoo Institute for Conservation Research, which is dedicated to the conservation of endangered species.",
     "image": "https://images.unsplash.com/photo-1590604237485-7bc1f066f462?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80",
-    "University": "University of Texas at Austin",
+    "University": "University: University of Texas at Austin",
     "Companies": "Some notable companies are Dell, Apple, IBM, and Oracle.",
     "description": "Austin and San Antonio are connected by 75 miles of continuous urbanization, including the vital region around San Marcos and a string of the fastest growing small cities in the nation. Austin is home to world-class companies, particularly in technology, the University of Texas, and also is home to the government of the nation’s second largest state. Austin is also home to the Texas State Capitol, the Texas Governor's Mansion, and the Texas Supreme Court."
   }

@@ -5,19 +5,27 @@ import { useState, useEffect } from "react";
 
 const Hero = (props) => {
 
-    const {austin, dallas, houston, sanAntonio, attractionType, searchTerm, setSearchTerm} = props;
+    const {austin, dallas, houston, sanAntonio, attractionType, searchTerm, city} = props;
     const [displayCities, setDisplayCities] = useState("");
 
 
     useEffect(() => {
+        //cityXXX=user selected; cityName=checkbox; city=dropdown
+        const userSelectedAnyCity = ( austin || dallas || houston || sanAntonio || city != "all" );
+        
+        const cityAustin = ( city == "Austin" || austin );
+        const cityDallas = ( city == "Dallas" || dallas );
+        const cityHouston = ( city == "Houston" || houston );
+        const citySanAntonio = ( city == "SanAntonio" || sanAntonio );
     
         const filteredCities = cities.filter((city)=>{
-            return ( austin && city.city === "Austin" ) ||
-                   ( dallas && city.city === "Dallas-Fort Worth" ) ||
-                   ( houston && city.city === "Houston" )||
-                   ( sanAntonio && city.city === "San Antonio" ) ||
-                   ( !austin && !dallas && !houston && !sanAntonio );
+            return ( cityAustin && city.city === "Austin" ) ||
+                   ( cityDallas && city.city === "Dallas-Fort Worth" ) ||
+                   ( cityHouston && city.city === "Houston" )||
+                   ( citySanAntonio && city.city === "San Antonio" ) ||
+                   ( !userSelectedAnyCity );
         });
+
         const filteredCities2 = filteredCities.filter((city) => {            
             
             const populationLower = city.population.toLowerCase();
@@ -80,12 +88,13 @@ const Hero = (props) => {
             else
                 return false;
         })
+
         const mappedCities = filteredCities2.map((city) => {
             return <Card info = {city}/>
         });
         setDisplayCities(mappedCities);
     
-    },[austin,dallas,houston,sanAntonio,attractionType,searchTerm])
+    },[austin,dallas,houston,sanAntonio,attractionType,searchTerm, city])
 
     return (
         <>
