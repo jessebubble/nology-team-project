@@ -25,3 +25,39 @@
     align-items: center;
     width: 100%;
 }
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: wheat;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    color: rgb(252, 143, 85);
+}
+
+
