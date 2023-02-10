@@ -1,7 +1,6 @@
 .logo {
-    height: 50%;
-    width: 50%;
-    object-fit: contain;
+    width: 60%;
+    height: 60%;
 }
 
 /* .navbar-filters > Filter.title {
