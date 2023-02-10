@@ -1,11 +1,8 @@
-.navbar-logo > h1 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 30px;
-    text-align: left;
+.logo {
+    width: 60%;
+    height: 60%;
 }
+
 /* .navbar-filters > Filter.title {
     text-decoration: none;
     list-style: none;
@@ -26,11 +23,12 @@
 }
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     background-color: #202020;
     box-shadow: 0 0 5px 0 #ffffff1a;
+    border-bottom: #ffffff;
 }
 .thirdperson{
     display:none;

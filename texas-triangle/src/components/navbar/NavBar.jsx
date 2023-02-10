@@ -1,14 +1,20 @@
 import "./navbar.css"
 import Filter from "../filter/Filter.jsx"
+import {ReactComponent as Logo} from "../../assets/nology-texas-triangle.svg"
 
 const NavBar = (props) => {
     const {setAustin, setDallas, setHouston, setSanAntonio, austin, dallas, 
             houston, sanAntonio, setCity} = props;
 
+    // const style1={
+    //     height: "200px",
+    //     width: "200px"
+    // }
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <h1>Texas Triangle</h1>
+                <Logo className="logo"/>
             </div>
             <div className="navbar-filters">
                 <Filter
