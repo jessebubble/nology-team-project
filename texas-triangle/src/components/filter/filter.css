@@ -1,0 +1,11 @@
+.filters {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.checkBox {
+    background-color: #202020;
+}
+

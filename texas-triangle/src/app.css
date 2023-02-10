@@ -1,0 +1,35 @@
+.hero {
+    background: #202020;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    padding: 10px;
+    color: #fff;
+    width: 40vh;    
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.tx-triangle{
+    font-size: small;
+}
