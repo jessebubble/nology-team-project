@@ -1,16 +1,12 @@
 import "./footer.css"
-import logo from "../../assets/texas-triangle.png"
+import {ReactComponent as FooterLogo} from "../../assets/texas-triangle.svg"
 
 const Footer = () => {
 
     return (
         <footer className="footer">
-            <div className="footer-logo">
-                <h1>
-                    <a href={logo}>
-                        <img src="texas-triangle\src\assets\texas-triangle.png" alt="Texas Triangle" className=""/>
-                    </a>
-                </h1>
+            <div>
+                <FooterLogo className="footer-logo"/>
             </div>
             <div className="footer-links">
                 <ul>
