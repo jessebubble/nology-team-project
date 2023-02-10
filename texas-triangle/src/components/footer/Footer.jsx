@@ -1,13 +1,12 @@
 import "./footer.css"
+import {ReactComponent as FooterLogo} from "../../assets/texas-triangle.svg"
 
 const Footer = () => {
 
     return (
         <footer className="footer">
-            <div className="footer-logo">
-                <h1>
-                    Texas Triangle
-                </h1>
+            <div>
+                <FooterLogo className="footer-logo"/>
             </div>
             <div className="footer-links">
                 <ul>
